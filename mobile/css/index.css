@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*container begin*/
+
+#container {
+    background: #EFEDF3;
+    width: 100%;
+}
+
+
+/*header*/
+
+#header {
+    overflow: hidden;
+    background: #31A4E5;
+}
+
+
+/*logo*/
+
+#logo {
+    float: left;
+    margin: 20px 0 10px 20px;
+}
+
+#logo img,
+#nav-list-btn img {
+    width: 90%;
+}
+
+
+/*logo end*/
+
+#nav-list-btn {
+    float: right;
+    margin: 30px 10px 10px 20px;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/*header end */
+
+
+/*content begin*/
+
+
+/*people begin*/
+
+#people,
+#tech,
+#seek,
+#know,
+#order {
+    height: 128px;
+}
+
+#people,
+#tech,
+#seek,
+#know,
+#order,
+#recommend {
+    width: 80%;
+    margin: 10px auto;
+    background: #41B56A;
+    border-radius: 20px;
+}
+
+#tech {
+    background: #EFA311;
+}
+
+#seek {
+    background: #E3594E;
+}
+
+#know {
+    background: #AE5DA0;
+}
+
+#order {
+    background: #31A4E5;
+}
+
+.content-ul {
+    overflow: hidden;
+}
+
+.content-ul>li {
+    width: 33%;
+    float: left;
+    margin: 10px 0 20px;
+    /*border-left:1px solid #ffffff;*/
+    /*height: 100%;*/
+}
+
+li:nth-child(1) {
+    text-align: center;
+}
+
+.con-ul li {
+    width: 100%;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+    overflow: hidden;
+}
+
+.con-ul li a {
+    color: #ffffff;
+}
+
+
+/*recommend*/
+
+#recommend {
+    height: 145px;
+    background: #FFFFFF;
+    border-radius: 0;
+    border: 1px solid #BFBFBF;
+    overflow: hidden;
+}
+
+.hot,
+.hot a,
+.daily,
+.daily a {
+    float: left;
+}
+
+.hot,
+.daily {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.hot a:nth-child(1),
+.daily a:nth-child(1) {
+    padding-left: 20px;
+    height: 100%;
+}
+
+.hot a:nth-child(2),
+.daily a:nth-child(2) {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+}
+
+
+/*content end*/
+
+
+/*footer begin*/
+
+#footer {
+    width: 100%;
+}
+
+
+/*bottom*/
+
+.bottom {
+    width: 70%;
+    height: 134px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.more-list {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.more-list>a {
+    float: left;
+    text-align: center;
+}
+
+.more-list a {
+    width: 20%;
+    /*padding: 1% 4.6%;*/
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*bottom end*/
+
+.foot-btn {
+    height: 121px;
+    width: 100%;
+    background: #31A4E5;
+}
+
+.foot-btn a {
+    width: 80%;
+}
+
+.btn-list {
+    overflow: hidden;
+    width: 24%;
+    float: left;
+    height: 121px;
+}
+
+.foot-btn a {
+    float: left;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 5%;
+    text-align: center;
+}
+
+.foot-btn a img {
+    padding-bottom: 8px;
+}
+
+.btn-line {
+    /*padding-bottom: 10px;*/
+    float: left;
+}
+
+
+/*footer end*/
+
+@media screen and ( max-width: 414px) {
+    #logo {
+        width: 70%;
+        margin: 10px 5px;
+    }
+    #nav-list-btn {
+        margin: 15px 5px;
+    }
+    #logo img,
+    #nav-list-btn img {
+        width: 60%;
+    }
+    .con-hide {
+        display: none;
+    }
+    .con-ul-li {
+        display: block;
+        width: 50%;
+        padding-left: 30px;
+    }
+    .content-ul img {
+        width: 80%;
+    }
+    .foot-btn {
+        height: 100px;
+    }
+    .btn-line {
+        display: none;
+    }
+    .btn-list {
+        height: 100px;
+    }
+    .btn-list a {
+        font-size: 16px;
+    }
+}
+
+@media screen and ( max-width: 320px) {
+    /*320px显示屏样式 苹果4/4S/5C/5S黑莓Z30 */
+    footer {
+        font-size: 12px;
+    }
+    .btn-list a {
+        font-size: 14px;
+    }
+}
+
+@media screen and ( max-width: 230px) {
+    #logo {
+        width: 60%;
+    }
+    #people,
+    #tech,
+    #seek,
+    #know,
+    #order {
+        height: 100px;
+    }
+    .content-ul img {
+        text-align: center;
+    }
+    .content-ul li:nth-child(1) {
+        width: 50%;
+    }
+    .content-ul li:nth-child(2),
+    .content-ul li:nth-child(3) {
+        display: none;
+    }
+}
